@@ -1,0 +1,45 @@
+$bl: #272822;
+$r: #c03;
+$g: #429032;
+$b: #2963bd;
+$y: #c90;
+
+h1, .sizeBox{
+    font-family:'Franklin Gothic Medium';
+    margin: 50px;
+    border: 5px solid $bl;
+    border-radius: 10px;
+    width:fit-content;
+    padding: 10px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    margin: 45px;
+}
+
+.column{
+    display: grid;
+    grid-auto-rows: 100px;
+    grid-auto-columns: 100px;
+}
+.row{
+    display: inline-grid;
+    row-gap: 10px;
+    margin: 5px;
+}
+
+div{
+    &.solidSquare{
+        align-self: center;
+        background-color: $b;
+        border: 1px solid $b;
+        border-radius: 20px;
+        height: 100px;
+        width: 100px;
+    }
+}
