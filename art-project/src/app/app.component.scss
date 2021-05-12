@@ -6,8 +6,9 @@ $y: #c90;
 
 h1, .sizeBox{
     font-family:'Franklin Gothic Medium';
+    font-size: 2vw;
     margin: 2vw;
-    border: 5px solid $bl;
+    border: .5vw solid $bl;
     border-radius: 10px;
     width:fit-content;
     padding: .5vw;
@@ -37,9 +38,51 @@ div{
     &.solidSquare{
         align-self: center;
         background-color: $b;
-        border: 1px solid $b;
         border-radius: 1vw;
         height: 7.5vw;
         width: 7.5vw;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    
+    h1, .sizeBox{
+        font-family:'Franklin Gothic Medium';
+        font-size: 2vh;
+        margin: 2vh;
+        border: .5vh solid $bl;
+        border-radius: 10px;
+        width:fit-content;
+        padding: .5vh;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .container{
+        margin: 1vh;
+    }
+
+    .column{
+        display: grid;
+        grid-auto-rows: 7.5vh;
+        grid-auto-columns: 7.5vh;
+    }
+    .row{
+        display: inline-grid;
+        row-gap: 2vh;
+        margin: 1vh;
+    }
+
+    div{
+        &.solidSquare{
+            align-self: center;
+            background-color: $b;
+            border-radius: 1vh;
+            height: 7.5vh;
+            width: 7.5vh;
+        }
     }
 }
