@@ -3,25 +3,65 @@ $r: #c03;
 $g: #429032;
 $b: #2963bd;
 $y: #c90;
+$w: #fff;
 
 div{
-    &.solidSquare{
+    &.square{
         align-self: center;
         background-color: $g;
         border-radius: 1vw;
         height: 7.5vw;
         width: 7.5vw;
     }
+    &.circle{
+        align-self: center;
+        background-color: $g;
+        border-radius: 3.75vw;
+        height: 7.5vw;
+        width: 7.5vw;
+    }
+    &.bottomLeft {        
+      height: 0;
+      width: 0;
+      border-bottom: 7.5vw solid $g;
+      border-right: 7.5vw solid $w;
+    }    
+    &.topRight {        
+        height: 0;
+        width: 0;
+        border-top: 7.5vw solid $r;
+        border-left: 7.5vw solid $w;
+    }
 }
 
 @media only screen and (orientation: landscape) {
     div{
-        &.solidSquare{
+        &.square{
             align-self: center;
             background-color: $b;
             border-radius: 1vh;
             height: 7.5vh;
             width: 7.5vh;
+        }
+        &.circle{
+            align-self: center;
+            background-color: $g;
+            border-radius: 3.75vh;
+            height: 7.5vh;
+            width: 7.5vh;
+        }
+        &.bottomLeft {        
+            height: 0;
+            width: 0;
+            border-radius: 1vh;
+            border-bottom: 7.5vh solid $y;
+            border-right: 7.5vh solid $g;
+        }    
+        &.topRight {        
+            height: 0;
+            width: 0;
+            border-top: 7.5vh solid $r;
+            border-left: 7.5vh solid $w;
         }
     }
 }
