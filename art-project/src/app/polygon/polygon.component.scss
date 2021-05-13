@@ -75,11 +75,23 @@ div{
             border-bottom: 7.5vh solid $y;
             border-right: 7.5vh solid $g;
         }    
+        &.bottomRight {        
+          height: 0;
+          width: 0;
+          border-bottom: 7.5vh solid $b;
+          border-left: 7.5vh solid $w;
+        } 
         &.topRight {        
             height: 0;
             width: 0;
             border-top: 7.5vh solid $r;
             border-left: 7.5vh solid $w;
+        }
+        &.topLeft {        
+            height: 0;
+            width: 0;
+            border-top: 7.5vh solid $r;
+            border-right: 7.5vh solid $w;
         }
     }
 }
