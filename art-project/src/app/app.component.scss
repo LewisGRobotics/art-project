@@ -35,16 +35,6 @@ h1, .sizeBox{
     margin: 1vw;
 }
 
-div{
-    &.solidSquare{
-        align-self: center;
-        background-color: $g;
-        border-radius: 1vw;
-        height: 7.5vw;
-        width: 7.5vw;
-    }
-}
-
 @media only screen and (orientation: landscape) {
     
     h1, .sizeBox{
@@ -75,15 +65,5 @@ div{
         display: inline-grid;
         row-gap: 2vh;
         margin: 1vh;
-    }
-
-    div{
-        &.solidSquare{
-            align-self: center;
-            background-color: $b;
-            border-radius: 1vh;
-            height: 7.5vh;
-            width: 7.5vh;
-        }
     }
 }

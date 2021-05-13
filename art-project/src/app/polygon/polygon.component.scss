@@ -6,6 +6,12 @@ $y: #c90;
 $w: #fff;
 
 div{
+    &.blank{
+        align-self: center;
+        background-color: $w;
+        height: 7.5vw;
+        width: 7.5vw;
+    }
     &.square{
         align-self: center;
         background-color: $g;
@@ -25,12 +31,24 @@ div{
       width: 0;
       border-bottom: 7.5vw solid $g;
       border-right: 7.5vw solid $w;
+    }
+    &.bottomRight {        
+      height: 0;
+      width: 0;
+      border-bottom: 7.5vw solid $b;
+      border-left: 7.5vw solid $w;
     }    
     &.topRight {        
         height: 0;
         width: 0;
-        border-top: 7.5vw solid $r;
+        border-top: 7.5vw solid $y;
         border-left: 7.5vw solid $w;
+    }
+    &.topLeft {        
+        height: 0;
+        width: 0;
+        border-top: 7.5vw solid $r;
+        border-right: 7.5vw solid $w;
     }
 }
 
