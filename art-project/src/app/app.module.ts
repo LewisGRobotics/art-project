@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PolygonComponent } from './polygon/polygon.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PolygonComponent
   ],
   imports: [
     BrowserModule,

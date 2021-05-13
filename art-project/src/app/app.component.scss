@@ -8,7 +8,7 @@ h1, .sizeBox{
     font-family:'Franklin Gothic Medium';
     font-size: 2vw;
     margin: 2vw;
-    border: .5vw solid $bl;
+    border: .5vw solid;
     border-radius: 10px;
     width:fit-content;
     padding: .5vw;
@@ -21,6 +21,7 @@ h1, .sizeBox{
 
 .container{
     margin: 1vw;
+    width: fit-content;
 }
 
 .column{
@@ -37,7 +38,7 @@ h1, .sizeBox{
 div{
     &.solidSquare{
         align-self: center;
-        background-color: $b;
+        background-color: $g;
         border-radius: 1vw;
         height: 7.5vw;
         width: 7.5vw;
@@ -50,7 +51,7 @@ div{
         font-family:'Franklin Gothic Medium';
         font-size: 2vh;
         margin: 2vh;
-        border: .5vh solid $bl;
+        border: .5vh solid;
         border-radius: 10px;
         width:fit-content;
         padding: .5vh;
