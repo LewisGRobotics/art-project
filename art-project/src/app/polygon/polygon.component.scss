@@ -72,8 +72,8 @@ div{
             height: 0;
             width: 0;
             border-radius: 1vh;
-            border-bottom: 7.5vh solid $y;
-            border-right: 7.5vh solid $g;
+            border-bottom: 7.5vh solid $g;
+            border-right: 7.5vh solid $w;
         }    
         &.bottomRight {        
           height: 0;
@@ -84,7 +84,7 @@ div{
         &.topRight {        
             height: 0;
             width: 0;
-            border-top: 7.5vh solid $r;
+            border-top: 7.5vh solid $y;
             border-left: 7.5vh solid $w;
         }
         &.topLeft {        
