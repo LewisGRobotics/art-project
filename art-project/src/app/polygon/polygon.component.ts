@@ -20,6 +20,8 @@ export class PolygonComponent implements OnInit {
     this.colorProperty= this.colorVector[colorIndex];
     const shapeIndex = Math.floor(Math.random() * 7);
     this.classSelector = this.shapeVector[shapeIndex];
+
+    if(this.classSelector == "blank") this.colorProperty = "#fff";
   }
 
 }
