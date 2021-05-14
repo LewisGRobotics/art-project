@@ -2,14 +2,14 @@
 <h1>Lewis' Art project</h1>
 <div class="header">
   
-  <input type="number" placeholder="Width" class="sizeBox">
-  <input type="number" placeholder="Height" class="sizeBox">
+  <input type="number" placeholder="Width" class="sizeBox" [value]="matrixWidthValue">
+  <input type="number" placeholder="Height" class="sizeBox" [value]="matrixHeightValue">
   <select name="width" class="colorBox">
     <option value="RYGB" selected>"Red / Yellow / Green / Blue"</option>
     <option value="Other">Other</option>
   </select>
   <div class="sliderContainer">
-    <input type="range" min="1" max="10" value="7.5" class="slider" id="sizeSlider">
+    <input type="range" min="1" max="10" value="7.5" class="slider" id="sizeSlider" [value]="sizeValue">
   </div>
 </div>
 
