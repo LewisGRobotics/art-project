@@ -1,11 +1,44 @@
-h1, .sizeBox{
+$bl: #272822;
+$gr: #ccc;
+$r: #c03;
+$g: #429032;
+$b: #2963bd;
+$y: #c90;
+$w: #fff;
+
+h1{
     font-family:'Franklin Gothic Medium';
+    text-align: center;
+    width:fit-content;
+    height: 5vw;
     font-size: 2vw;
     margin: 2vw;
     border: .5vw solid;
     border-radius: 10px;
-    width:fit-content;
     padding: .5vw;
+}
+
+.colorBox{
+    font-family:'Franklin Gothic Medium';
+    width:fit-content;
+    align-self: center;
+    height: 6vw;
+    font-size: 2vw;
+    margin: 2vw;
+    border: .5vw solid;
+    border-radius: 10px;
+    padding: .5vw;
+}
+
+.sizeBox{
+    font-family:'Franklin Gothic Medium';
+    align-self: center;
+    width: 7.5vw;
+    height: 5vw;
+    font-size: 2vw;
+    margin: 2vw;
+    border: .5vw solid;
+    border-radius: 10px;
 }
 
 .header{
@@ -29,6 +62,36 @@ h1, .sizeBox{
     margin: 1vw;
 }
 
+/* Slider */
+.sliderContainer {
+    width: 20vw;
+    align-self: center;
+    margin: 2vw;
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    height:fit-content;
+    background: $gr;
+    opacity: 0.9;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 2vw;
+    height: 2vw; 
+    background: $bl; 
+    cursor: pointer; 
+}
+/* Slider */
+
 @media only screen and (orientation: landscape) {
     
     h1, .sizeBox{
@@ -39,6 +102,27 @@ h1, .sizeBox{
         border-radius: 10px;
         width:fit-content;
         padding: .5vh;
+    }
+    
+    .colorBox{
+        font-family:'Franklin Gothic Medium';
+        width:fit-content;
+        align-self: center;
+        font-size: 2vh;
+        margin: 2vh;
+        border: .5vh solid;
+        border-radius: 10px;
+        padding: .5vh;
+    }
+
+    
+    .sizeBox{
+        font-family:'Franklin Gothic Medium';
+        width: 7.5vh;
+        font-size: 2vh;
+        margin: 2vh;
+        border: .5vh solid;
+        border-radius: 10px;
     }
 
     .header{
@@ -60,4 +144,20 @@ h1, .sizeBox{
         row-gap: 2vh;
         margin: 1vh;
     }
+
+    /* Slider */
+    .sliderContainer {
+        width: 20vh;
+        align-self: center;
+        margin: 2vh;
+    }
+
+    .slider::-webkit-slider-thumb {
+        appearance: none;
+        width: 2vh;
+        height: 2vh; 
+        background: $bl; 
+        cursor: pointer; 
+    }
+    /* Slider */
 }

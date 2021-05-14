@@ -1,7 +1,16 @@
 
+<h1>Lewis' Art project</h1>
 <div class="header">
-  <h1>Lewis' Art project</h1>
-  <input type="text" placeholder="size" class="sizeBox">
+  
+  <input type="number" placeholder="Width" class="sizeBox">
+  <input type="number" placeholder="Height" class="sizeBox">
+  <select name="width" class="colorBox">
+    <option value="RYGB" selected>"Red / Yellow / Green / Blue"</option>
+    <option value="Other">Other</option>
+  </select>
+  <div class="sliderContainer">
+    <input type="range" min="1" max="10" value="7.5" class="slider" id="sizeSlider">
+  </div>
 </div>
 
 
@@ -13,7 +22,9 @@
   </div>
 </div>
 
+
 <hr/>
 <footer>
   <p>&copy; Luis García Montañés | 2021 </p>
+  <a href="https://github.com/LewisGRobotics"> About</a>
 </footer>
