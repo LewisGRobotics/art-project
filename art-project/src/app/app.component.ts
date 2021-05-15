@@ -6,17 +6,20 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
+  
   title = "Lewis' Art Project";
   matrixHeightValue = 8;
   matrixWidthValue = 8;
-  sliderValue = 8;
+  sliderValue = 7;
   sizeValue = 7;
   itemsWidth = [1,2,3,4,5,6,7,8];
   itemsHeight = [1,2,3,4,5,6,7,8];
   
   public constructor(private titleService: Title) {
     this.titleService.setTitle(this.title);
+    
   }
 
   public onWidthChanged(): void {

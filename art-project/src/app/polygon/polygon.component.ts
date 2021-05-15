@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-polygon',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./polygon.component.scss']
 })
 export class PolygonComponent implements OnInit {
+  
+  @Input() polygonSize: Number;
   
   colorVector = ["#272822","#c03", "#429032", "#2963bd","#c90"];
   shapeVector = ["blank", "square", "bottomLeft", "bottomRight", "topLeft", "topRight", "circle"];
@@ -15,10 +17,13 @@ export class PolygonComponent implements OnInit {
   shapeSelector = "bottomLeft";
   toggled = false;
 
-  constructor() {}
+  constructor() {
+    this.polygonSize = 0;
+  }
 
   polygonClicked(): void {    
     this.generateRandom();
+    console.log(this.polygonSize);
 
   }
 
@@ -37,7 +42,7 @@ export class PolygonComponent implements OnInit {
     this.shape = this.shapeSelector;
 
     if(this.shapeSelector == "blank") this.colorSelector = "#fff";
-    if(this.shapeSelector == "bottomLeft") this.colorSelector = "7.5vh solid $g";
+    if(this.shapeSelector == "bottomLeft") this.colorSelector = "7vh solid $g";
   }
 
   // Hide/show polygon

@@ -11,13 +11,16 @@ div{
         background-color: $w;
         height: 7vw;
         width: 7vw;
+        border-bottom: 0 !important;
+        border-right: 0 !important;
     }
     &.square{
         align-self: center;
         background-color: $g;
         border-radius: 1vw;
-        height: 7vw;
         width: 7vw;
+        border-bottom: 0 !important;
+        border-right: 0 !important;
     }
     &.circle{
         align-self: center;
@@ -25,30 +28,40 @@ div{
         border-radius: 3.75vw;
         height: 7vw;
         width: 7vw;
+        border-bottom: 0 !important;
+        border-right: 0 !important;
     }
     &.bottomLeft {        
-      height: 0;
-      width: 0;
+      height: 0 !important;
+      width: 0 !important;
       border-bottom: 7vw solid $g;
       border-right: 7vw solid $w;
+      border-top: 0 !important;
+      border-left: 0 !important;      
     }
     &.bottomRight {        
-      height: 0;
-      width: 0;
+      height: 0 !important;
+      width: 0 !important;
       border-bottom: 7vw solid $b;
       border-left: 7vw solid $w;
+      border-top: 0 !important;
+      border-right: 0 !important;
     }    
     &.topRight {        
-        height: 0;
-        width: 0;
+        height: 0 !important;
+        width: 0 !important;
         border-top: 7vw solid $y;
         border-left: 7vw solid $w;
+        border-bottom: 0 !important;
+        border-right: 0 !important;
     }
     &.topLeft {        
-        height: 0;
-        width: 0;
+        height: 0 !important;
+        width: 0 !important;
         border-top: 7vw solid $r;
         border-right: 7vw solid $w;
+        border-bottom: 0 !important;
+        border-left: 0 !important;
     }
 }
 
@@ -60,6 +73,9 @@ div{
             border-radius: 1vh;
             height: 7vh;
             width: 7vh;
+            border-bottom: 0 !important;
+            border-right: 0 !important;
+            
         }
         &.circle{
             align-self: center;
@@ -67,28 +83,30 @@ div{
             border-radius: 3.75vh;
             height: 7vh;
             width: 7vh;
+            border-bottom: 0 !important;
+            border-right: 0 !important;            
         }
         &.bottomLeft {        
-            height: 0;
-            width: 0;
+            height: 0 !important;
+            width: 0 !important;
             border-bottom: 7vh solid $g;
             border-right: 7vh solid $w;
         }    
         &.bottomRight {        
-          height: 0;
-          width: 0;
+          height: 0 !important;
+          width: 0 !important;
           border-bottom: 7vh solid $b;
           border-left: 7vh solid $w;
         } 
         &.topRight {        
-            height: 0;
-            width: 0;
+            height: 0 !important;
+            width: 0 !important;
             border-top: 7vh solid $y;
             border-left: 7vh solid $w;
         }
         &.topLeft {        
-            height: 0;
-            width: 0;
+            height: 0 !important;
+            width: 0 !important;
             border-top: 7vh solid $r;
             border-right: 7vh solid $w;
         }

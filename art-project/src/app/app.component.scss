@@ -45,17 +45,18 @@ h1{
 .container{
     margin: 1vw;
     width: fit-content;
+    height: fit-content;
 }
 
 .column{
     display: grid;
-    grid-auto-rows: 7.5vw;
-    grid-auto-columns: 7.5vw;
+    grid-auto-rows: 7vw;
+    grid-auto-columns: 7vw;
 }
 .row{
     display: inline-grid;
-    row-gap: 2vw;
-    margin: 1vw;
+    row-gap: .5vw;
+    margin: .25vw;
 }
 
 /* Slider */

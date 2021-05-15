@@ -9,15 +9,18 @@
     <option value="Other">Other</option>
   </select>
   <div class="sliderContainer">
-    <input type="range" min="1" max="10" value="7.5" class="slider" id="sizeSlider" [(ngModel)]="sliderValue" (change)="onSliderChanged()">
+    <input type="range" min="1" max="10"  class="slider" id="sizeSlider" [(ngModel)]="sliderValue" (change)="onSliderChanged()">
   </div>
 </div>
 
 
 <div class="container">
   <div class="row" *ngFor="let item of itemsWidth">
-    <div class="column" *ngFor="let itemsHeight of itemsHeight">
-      <app-polygon></app-polygon>
+    <div class="column" *ngFor="let itemsHeight of itemsHeight"
+      [style.grid-auto-rows]="sliderValue | addViewport"
+      [style.grid-auto-columns]="sliderValue | addViewport">
+            
+      <app-polygon [polygonSize]="sliderValue"></app-polygon>
     </div>
   </div>
 </div>

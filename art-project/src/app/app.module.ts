@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { PolygonComponent } from './polygon/polygon.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { AddViewportPipe } from './add-viewport.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PolygonComponent
+    PolygonComponent,
+    AddViewportPipe
   ],
   imports: [
     BrowserModule,
