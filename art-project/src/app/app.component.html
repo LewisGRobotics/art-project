@@ -1,15 +1,15 @@
 
-<h1>Lewis' Art project</h1>
+<h1>Lewis' Art Project</h1>
 <div class="header">
   
-  <input type="number" placeholder="Width" class="sizeBox" [value]="matrixWidthValue">
-  <input type="number" placeholder="Height" class="sizeBox" [value]="matrixHeightValue">
+  <input type="number" placeholder="Width" min="1" max="30" class="sizeBox" [(ngModel)]="matrixWidthValue" (change)="onWidthChanged()">
+  <input type="number" placeholder="Height" min="1" max="30" class="sizeBox" [(ngModel)]="matrixHeightValue" (change)="onHeightChanged()">
   <select name="width" class="colorBox">
     <option value="RYGB" selected>"Red / Yellow / Green / Blue"</option>
     <option value="Other">Other</option>
   </select>
   <div class="sliderContainer">
-    <input type="range" min="1" max="10" value="7.5" class="slider" id="sizeSlider" [value]="sizeValue">
+    <input type="range" min="1" max="10" value="7.5" class="slider" id="sizeSlider" [(ngModel)]="sliderValue" (change)="onSliderChanged()">
   </div>
 </div>
 
