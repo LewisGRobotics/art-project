@@ -12,7 +12,8 @@ export class AppComponent {
   matrixWidthValue = 8;
   sliderValue = 8;
   sizeValue = 7;
-  items = [1,2,3,4,5,6,7,8];
+  itemsWidth = [1,2,3,4,5,6,7,8];
+  itemsHeight = [1,2,3,4,5,6,7,8];
   
   public constructor(private titleService: Title) {
     this.titleService.setTitle(this.title);
@@ -21,15 +22,21 @@ export class AppComponent {
   public onWidthChanged(): void {
     console.log(this.matrixWidthValue);
     
-    this.items = [];
+    this.itemsWidth = [];
 
     for(let i=0; i<this.matrixWidthValue; i++){
-      this.items.push(1);
+      this.itemsWidth.push(1);
     }
   }
 
   public onHeightChanged(): void {
     console.log(this.matrixHeightValue);
+    
+    this.itemsHeight = [];
+
+    for(let i=0; i<this.matrixHeightValue; i++){
+      this.itemsHeight.push(1);
+    }
   }
 
   public onSliderChanged(): void {
