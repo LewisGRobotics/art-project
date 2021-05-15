@@ -14,12 +14,12 @@ export class AppComponent {
   matrixWidthValue = 8;
   sliderValue = 7;
   sizeValue = 7;
+  // This is a hack, this should contain the actual polygons instances
   itemsWidth = [1,2,3,4,5,6,7,8];
   itemsHeight = [1,2,3,4,5,6,7,8];
   
   public constructor(private titleService: Title) {
-    this.titleService.setTitle(this.title);
-    
+    this.titleService.setTitle(this.title);    
   }
 
   public onWidthChanged(): void {

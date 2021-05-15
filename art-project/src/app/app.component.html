@@ -1,4 +1,3 @@
-
 <h1>Lewis' Art Project</h1>
 <div class="header">
   
@@ -6,6 +5,7 @@
   <input type="number" placeholder="Height" min="1" max="30" class="sizeBox" [(ngModel)]="matrixHeightValue" (change)="onHeightChanged()">
   <select name="width" class="colorBox">
     <option value="RYGB" selected>"Red / Yellow / Green / Blue"</option>
+    <!--There's no other palette so far. This is TBD-->
     <option value="Other">Other</option>
   </select>
   <div class="sliderContainer">
@@ -19,7 +19,7 @@
     <div class="column" *ngFor="let itemsHeight of itemsHeight"
       [style.grid-auto-rows]="sliderValue | addViewport"
       [style.grid-auto-columns]="sliderValue | addViewport">
-            
+
       <app-polygon [polygonSize]="sliderValue"></app-polygon>
     </div>
   </div>

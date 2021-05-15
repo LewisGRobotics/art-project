@@ -5,6 +5,8 @@ $b: #2963bd;
 $y: #c90;
 $w: #fff;
 
+// The triangles color should be a free choice and not hardcoded
+// !important marker prevents overriding the property
 div{
     &.blank{
         align-self: center;
