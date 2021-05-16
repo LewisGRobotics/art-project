@@ -11,6 +11,20 @@ h1{
     padding: .5vw;
 }
 
+p, a{
+    font-family:'Franklin Gothic Medium';
+    width:fit-content;
+    font-size: 2vw;
+    color: $bl;
+    margin: 2vw;
+    padding: .5vw;
+}
+
+hr{
+    margin: 2vw;
+    border:.25vw solid $bl;
+}
+
 .colorBox{
     font-family:'Franklin Gothic Medium';
     width:fit-content;
@@ -38,7 +52,7 @@ h1{
 }
 
 .container{
-    margin: 1vw;
+    margin: 2vw;
 }
 
 .column{
