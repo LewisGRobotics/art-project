@@ -1,5 +1,5 @@
 # art-project
-I'm using this project to practice Typescript, angular directives and pipes, and do something that I can style with SCSS to look good, minimalist and intuitive (no need for explanations or titles)
+I'm using this project to practice Typescript, angular directives and pipes, and do something that I can style with SCSS to look good, minimalistic and intuitive (no need for explanations or titles)
  
 Current deployment: https://art-project-lewisgrobotics.vercel.app/
  
