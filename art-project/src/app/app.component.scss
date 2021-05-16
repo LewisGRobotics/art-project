@@ -107,6 +107,15 @@ hr{
         width:fit-content;
         padding: .5vh;
     }
+
+    p, a{
+        font-family:'Franklin Gothic Medium';
+        width:fit-content;
+        font-size: 2vh;
+        color: $bl;
+        margin: 2vh;
+        padding: .5vh;
+    }
     
     .colorBox{
         font-family:'Franklin Gothic Medium';
